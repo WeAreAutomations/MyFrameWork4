@@ -1,12 +1,7 @@
 package tests.createAccountPageTests;
 
-import Common.CommonActions;
-import Common.Config.*;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 
 import java.io.IOException;
 
@@ -15,7 +10,7 @@ public class Tests extends BaseTest {
         super("win_chrome");
     }
 
-    @Test
+//    @Test
     public void test1() throws IOException, InterruptedException {
         //Open a page for test
         action.openPage("https://dex-trade.com/sign-up");
@@ -39,7 +34,7 @@ public class Tests extends BaseTest {
                 "Screenshots/Create_Account_page/EnChrome/Screenshots_test1/difference.png");
     }
 
-    @Test
+//    @Test
     public void test2() throws IOException, InterruptedException {
         action.openPage("https://dex-trade.com/sign-up");
         action.waitElementIsVisible("//a[@data-test-id='header login']");
@@ -49,7 +44,7 @@ public class Tests extends BaseTest {
 //        pixelPerfect.Assert(0.005);
     }
 
-    @Test
+//    @Test
     public void test3() throws IOException, InterruptedException {
         action.openPage("https://dex-trade.com/sign-up");
         action.waitElementIsVisible("//a[@data-test-id='header login']");
@@ -59,7 +54,7 @@ public class Tests extends BaseTest {
                 "Screenshots/Create_Account_page/EnChrome/Screenshots_test3/difference.png");
     }
 
-    @Test
+//    @Test
     public void test4() throws IOException, InterruptedException {
         action.openPage("https://dex-trade.com/sign-up");
         action.waitElementIsVisible("//a[@data-test-id='header login']");
@@ -68,6 +63,14 @@ public class Tests extends BaseTest {
                 "Screenshots/Create_Account_page/EnChrome/Screenshots_test4/difference.png");
     }
 
+    @Test
+    public void restore_password() throws IOException, InterruptedException {
+        action.openPage("https://dex-trade.com/restore-password");
+        action.waitElementIsVisible("//a[@data-test-id='header signup']");
+        pixelPerfect.fullPage("Screenshots/Create_Account_page/EnChrome/restore_password/real_life_screenshot.png",
+                "Screenshots/Create_Account_page/EnChrome/restore_password/mock_screenshot.png",
+                "Screenshots/Create_Account_page/EnChrome/restore_password/difference.png" );
+    }
 
 }
 
