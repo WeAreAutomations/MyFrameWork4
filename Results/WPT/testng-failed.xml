@@ -8,8 +8,6 @@
           <include name="close"/>
           <include name="test2"/>
           <include name="clearCookiesAndLocalStorage"/>
-          <include name="test1"/>
-          <include name="test3"/>
         </methods>
       </class> <!-- tests.createAccountPageTests.Tests -->
     </classes>

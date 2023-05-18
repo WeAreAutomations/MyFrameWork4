@@ -1,6 +1,7 @@
 package pages.pixel_perfect;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.Dimension;
 import org.testng.Assert;
 
 import javax.imageio.ImageIO;
@@ -15,10 +16,15 @@ import java.nio.file.StandardCopyOption;
 public class PixelPerfect {
     protected WebDriver driver;
 
-    public PixelPerfect(WebDriver driver){this.driver = driver;}
+    public PixelPerfect(WebDriver driver) {
+        this.driver = driver;
+    }
 
     public void byElement(String ElementXpath, String RealLifeScreenShotPath, String MockFilePath,
-                          String DifferenceFilePath) throws InterruptedException, IOException {
+                          String DifferenceFilePath, String resolution) throws InterruptedException,
+            IOException {
+        setBrowserWindowSize(resolution);  // new method to set browser window size
+
         Thread.sleep(1500);
 
         WebElement inputWrapper = driver.findElement(By.xpath(ElementXpath));//"input-wrap"
@@ -104,9 +110,12 @@ public class PixelPerfect {
     }
 
     public double fullPage(String RealLifeScreenShotPath, String MockFilePath,
-                          String DifferenceFilePath) throws InterruptedException, IOException {
-        Thread.sleep(1500);
+                           String DifferenceFilePath, String resolution) throws InterruptedException,
+            IOException {
 
+        setBrowserWindowSize(resolution);  // new method to set browser window size
+
+        Thread.sleep(1500);
 
         try {
             File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -139,7 +148,7 @@ public class PixelPerfect {
         double averageBrightness2 = calculateAverageBrightness(grayscaleImage2);
 
         // Calculate the difference in average brightness between the two images
-        double  brightnessDifference = Math.abs(averageBrightness1 - averageBrightness2);
+        double brightnessDifference = Math.abs(averageBrightness1 - averageBrightness2);
 
         // Print the result
         if (brightnessDifference < 0.005) {
@@ -216,10 +225,20 @@ public class PixelPerfect {
 
     }
 
-    public void Assert(Double brightnessDifference){
+    public void Assert(Double brightnessDifference) {
         Assert.assertTrue(brightnessDifference < 0.005, "*** Images are not similar ***");
 
     }
 
+    private void setBrowserWindowSize(String resolution) {
+        switch (resolution) {
+            case "FULL HD":
+                driver.manage().window().setSize(new Dimension(1920, 1080));
+                break;
+            // You can add more case statements for other predefined resolutions
+            default:
+                throw new IllegalArgumentException("Unsupported resolution: " + resolution);
+        }
 
+    }
 }
