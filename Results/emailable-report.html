@@ -9,11 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">WPT</th></tr>
-<tr><td><a href="#t0">Dex-Trade - Pixel perfect regression</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,753</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Dex-Trade - Pixel perfect regression</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">32,014</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">WPT</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Dex-Trade - Pixel perfect regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.createAccountPageTests.Tests</td><td><a href="#m0">test1</a></td><td rowspan="1">1684395085223</td><td rowspan="1">10246</td></tr><tr class="passedeven"><td><a href="#m1">test2</a></td><td rowspan="1">1684395095472</td><td rowspan="1">9406</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">WPT</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Dex-Trade - Pixel perfect regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.marketsPageTests.Header_Tests</td><td><a href="#m0">markets_info_container</a></td><td rowspan="1">1684790323777</td><td rowspan="1">9487</td></tr><tr><th colspan="4">Dex-Trade - Pixel perfect regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.marketsPageTests.Header_Tests</td><td><a href="#m1">all_header</a></td><td rowspan="1">1684790312030</td><td rowspan="1">11737</td></tr><tr class="passedeven"><td><a href="#m2">markets_title</a></td><td rowspan="1">1684790333266</td><td rowspan="1">10731</td></tr></tbody>
 </table>
-<h2>Dex-Trade - Pixel perfect regression</h2><h3 id="m0">tests.createAccountPageTests.Tests#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.createAccountPageTests.Tests#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Dex-Trade - Pixel perfect regression</h2><h3 id="m0">tests.marketsPageTests.Header_Tests#markets_info_container</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.Header_Tests.markets_info_container(Header_Tests.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.marketsPageTests.Header_Tests#all_header</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.marketsPageTests.Header_Tests#markets_title</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

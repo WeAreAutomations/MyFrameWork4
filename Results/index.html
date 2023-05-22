@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-WPT" class="navigator-link">
-              <span class="suite-name border-passed">WPT</span>
+              <span class="suite-name border-failed">WPT</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-WPT" class="navigator-link ">
-                    <span>D:\Test\Dex-Trade\MyFrameWork4\src\test\java\resources\testng.xml</span>
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-WPT" class="hide-methods failed suite-WPT"> (hide)</a> <!-- hide-methods failed suite-WPT -->
+                      <a href="#" panel-name="suite-WPT" class="show-methods failed suite-WPT"> (show)</a> <!-- show-methods failed suite-WPT -->
+                    </span>
+                    <div class="method-list-content failed suite-WPT">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.Header_Tests" class="method navigator-link" hash-for-method="markets_info_container">markets_info_container</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-WPT -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +118,12 @@
                     <div class="method-list-content passed suite-WPT">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-WPT" title="tests.createAccountPageTests.Tests" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.Header_Tests" class="method navigator-link" hash-for-method="all_header">all_header</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-WPT" title="tests.createAccountPageTests.Tests" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.Header_Tests" class="method navigator-link" hash-for-method="markets_title">markets_title</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-WPT -->
@@ -124,24 +138,47 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-WPT" class="panel WPT">
-          <div class="suite-WPT-class-passed">
+          <div class="suite-WPT-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.createAccountPageTests.Tests</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.marketsPageTests.Header_Tests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
+                  <a name="markets_info_container">
+                  </a> <!-- markets_info_container -->
+                  <span class="method-name">markets_info_container</span>
+                  <div class="stack-trace">java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.Header_Tests.markets_info_container(Header_Tests.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WPT-class-failed -->
+          <div class="suite-WPT-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.marketsPageTests.Header_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="all_header">
+                  </a> <!-- all_header -->
+                  <span class="method-name">all_header</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test2">
-                  </a> <!-- test2 -->
-                  <span class="method-name">test2</span>
+                  <a name="markets_title">
+                  </a> <!-- markets_title -->
+                  <span class="method-name">markets_title</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +186,7 @@
         </div> <!-- panel WPT -->
         <div panel-name="test-xml-WPT" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Test\Dex-Trade\MyFrameWork4\src\test\java\resources\testng.xml</span>
+            <span class="header-content">/Users/admin/IdeaProjects/MyFrameWork4/src/test/java/resources/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -158,7 +195,7 @@
 &lt;suite name=&quot;WPT&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Dex-Trade - Pixel perfect regression&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.createAccountPageTests.Tests&quot;/&gt;
+      &lt;class name=&quot;tests.marketsPageTests.Header_Tests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Dex-Trade - Pixel perfect regression --&gt;
 &lt;/suite&gt; &lt;!-- WPT --&gt;
@@ -198,20 +235,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test1')
-data.setCell(0, 2, 'tests.createAccountPageTests.Tests')
-data.setCell(0, 3, 10246);
+data.setCell(0, 1, 'all_header')
+data.setCell(0, 2, 'tests.marketsPageTests.Header_Tests')
+data.setCell(0, 3, 11737);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test2')
-data.setCell(1, 2, 'tests.createAccountPageTests.Tests')
-data.setCell(1, 3, 9406);
+data.setCell(1, 1, 'markets_title')
+data.setCell(1, 2, 'tests.marketsPageTests.Header_Tests')
+data.setCell(1, 3, 10731);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'markets_info_container')
+data.setCell(2, 2, 'tests.marketsPageTests.Header_Tests')
+data.setCell(2, 3, 9487);
 window.suiteTableData['WPT']= { tableData: data, tableDiv: 'times-div-WPT'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-WPT">
               </div> <!-- times-div-WPT -->
             </div> <!-- times-div -->
@@ -237,22 +278,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.createAccountPageTests.Tests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.marketsPageTests.Header_Tests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test1</span>
+                <span class="method-name">all_header</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test2</span>
-                <span class="method-start">10249 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">markets_info_container</span>
+                <span class="method-start">11747 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">markets_title</span>
+                <span class="method-start">21236 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">clearCookiesAndLocalStorage</span>
-                <span class="method-start">19659 ms</span>
+                <span class="method-start">31973 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">19703 ms</span>
+                <span class="method-start">37025 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

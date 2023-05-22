@@ -5,7 +5,8 @@
         <test name="Dex-Trade - Pixel perfect regression">
 
         <classes>
-            <class name="tests.createAccountPageTests.Tests"/>
+<!--            <class name="tests.createAccountPageTests.Tests"/>-->
+            <class name="tests.marketsPageTests.Header_Tests"></class>
         </classes>
 
         </test>
