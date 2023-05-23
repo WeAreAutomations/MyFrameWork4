@@ -1,6 +1,7 @@
 package pages.base;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -16,7 +17,7 @@ public class Action {
 
     protected WebDriver driver;
 
-    public Action(WebDriver driver){
+    public Action(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -35,12 +36,12 @@ public class Action {
         return element;
     }
 
-    public void waitElementIsVisible(String xpath){
+    public void waitElementIsVisible(String xpath) {
         new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT)).
                 until(ExpectedConditions.visibilityOf(findElementByXpath(xpath)));
     }
 
-    public void inputText(WebElement element, String text){
+    public void inputText(WebElement element, String text) {
         element.sendKeys(text);
     }
 
@@ -54,12 +55,12 @@ public class Action {
         inputText(element, text);
     }
 
-    public void clickByXpath(String xpath){
+    public void clickByXpath(String xpath) {
         WebElement element = findElementByXpath(xpath);
         element.click();
     }
 
-    public void clickByID(String id){
+    public void clickByID(String id) {
         WebElement element = findElementByXpath(id);
         element.click();
     }
@@ -72,6 +73,12 @@ public class Action {
     public void hoverOverAnElementByID(String id) {
         Actions action = new Actions(driver);
         action.moveToElement(findElementByXpath(id)).perform();
+    }
+
+    public void scrollPage(Double Scroll_to_pointed_pixel) {
+        // Проскролить страницу на определенное количество пикселей
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(Scroll_to_pointed_pixel)");
     }
 
 
