@@ -81,5 +81,11 @@ public class Action {
         js.executeScript("window.scrollBy" + "(" + Scroll_to_pointed_pixel + ")");//"window.scrollBy(0,500)"
     }
 
+    public void viewElementByXpath(String xpath){
+        WebElement element = findElementByXpath(xpath);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", element);
+    }
 
 }

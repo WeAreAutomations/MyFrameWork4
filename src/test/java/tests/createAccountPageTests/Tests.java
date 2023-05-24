@@ -49,7 +49,9 @@ public class Tests extends BaseTest {
     public void test3() throws IOException, InterruptedException {
         action.openPage("https://dex-trade.com/info/terms-of-use");
         action.waitElementIsVisible("//a[@data-test-id='header login']");
-        action.scrollPage("0,867");
+        action.clickByXpath("//div[@data-test-id='lang-footer']");
+        action.viewElementByXpath("//div[@data-test-id=\"hi\"]");
+
         Thread.sleep(60000);
 //        pixelPerfect.byElement("//div[@class='menu-container']", "Screenshots/Create_Account_page/EnChrome/Screenshots_test3/real_life_screenshot.png",
 //                "Screenshots/Create_Account_page/EnChrome/Screenshots_test3/mock_screenshot.png",
