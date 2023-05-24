@@ -36,28 +36,33 @@ public class TermsOfUse extends BaseTest {
                 "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/difference.png");
 
     }
-//    @Test
+
+    @Test
     public void termsOfUseTextPart2() throws IOException, InterruptedException {
         action.openPage("https://dex-trade.com/info/terms-of-use");
         action.waitElementIsVisible("//a[@data-test-id='header login']");
+        action.scrollPage("0,860");
+//        Thread.sleep(12000);
         pixelPerfect.byElement("//div[@class=\"light-page__styles legal-page__styles\"]",
                 "Screenshots/termsOfUseTextPart2/EnChrome/screenshots_termsOfUseHederTestPart2/real_life_screenshot.png",
                 "Screenshots/termsOfUseTextPart2/EnChrome/screenshots_termsOfUseHederTestPart2/mock_screenshot.png",
                 "Screenshots/termsOfUseTextPart2/EnChrome/screenshots_termsOfUseHederTestPart2/difference.png");
+
     }
 
-//        @Test
-        public void termsOfUseTextPart3() throws IOException, InterruptedException {
-            action.openPage("https://dex-trade.com/info/terms-of-use");
-            action.waitElementIsVisible("//a[@data-test-id='header login']");
-            pixelPerfect.byElement("//div[@class=\"light-page__styles legal-page__styles\"]",
-                    "Screenshots/termsOfUseTextPart3/EnChrome/screenshots_termsOfUseHederTestPart3/real_life_screenshot.png",
-                    "Screenshots/termsOfUseTextPart3/EnChrome/screenshots_termsOfUseHederTestPart3/mock_screenshot.png",
-                    "Screenshots/termsOfUseTextPart3/EnChrome/screenshots_termsOfUseHederTestPart3/real_life_screenshot.png");
+    @Test
+    public void termsOfUseTextPart3() throws IOException, InterruptedException {
+        action.openPage("https://dex-trade.com/info/terms-of-use");
+        action.waitElementIsVisible("//a[@data-test-id='header login']");
+        action.scrollPage("0,1717");
+        pixelPerfect.byElement("//div[@class=\"light-page__styles legal-page__styles\"]",
+                "Screenshots/termsOfUseTextPart3/EnChrome/screenshots_termsOfUseHederTestPart3/real_life_screenshot.png",
+                "Screenshots/termsOfUseTextPart3/EnChrome/screenshots_termsOfUseHederTestPart3/mock_screenshot.png",
+                "Screenshots/termsOfUseTextPart3/EnChrome/screenshots_termsOfUseHederTestPart3/difference.png");
 
-        }
+    }
 
-//    @Test
+    //    @Test
     public void termsOfUseTextPart4() throws IOException, InterruptedException {
         action.openPage("https://dex-trade.com/info/terms-of-use");
         action.waitElementIsVisible("//a[@data-test-id='header login']");
@@ -68,8 +73,8 @@ public class TermsOfUse extends BaseTest {
 
     }
 
-//    @Test
-    public void termsOfUseTextPart1() throws IOException, InterruptedException {
+    //    @Test
+    public void termsOfUseTextPart5() throws IOException, InterruptedException {
         action.openPage("https://dex-trade.com/info/terms-of-use");
         action.waitElementIsVisible("//a[@data-test-id='header login']");
         pixelPerfect.byElement("//div[@class=\"light-page__styles legal-page__styles\"]",
@@ -79,8 +84,8 @@ public class TermsOfUse extends BaseTest {
 
     }
 
-//    @Test
-    public void termsOfUseTextPart1() throws IOException, InterruptedException {
+    //    @Test
+    public void termsOfUseTextPart6() throws IOException, InterruptedException {
         action.openPage("https://dex-trade.com/info/terms-of-use");
         action.waitElementIsVisible("//a[@data-test-id='header login']");
         pixelPerfect.byElement("//div[@class=\"light-page__styles legal-page__styles\"]",
@@ -90,28 +95,8 @@ public class TermsOfUse extends BaseTest {
 
     }
 
-//    @Test
-    public void termsOfUseTextPart1() throws IOException, InterruptedException {
-        action.openPage("https://dex-trade.com/info/terms-of-use");
-        action.waitElementIsVisible("//a[@data-test-id='header login']");
-        pixelPerfect.byElement("//div[@class=\"light-page__styles legal-page__styles\"]",
-                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/real_life_screenshot.png",
-                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/mock_screenshot.png",
-                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/difference.png");
-
-    }
-//    @Test
-    public void termsOfUseTextPart1() throws IOException, InterruptedException {
-        action.openPage("https://dex-trade.com/info/terms-of-use");
-        action.waitElementIsVisible("//a[@data-test-id='header login']");
-        pixelPerfect.byElement("//div[@class=\"light-page__styles legal-page__styles\"]",
-                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/real_life_screenshot.png",
-                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/mock_screenshot.png",
-                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/difference.png");
-
-    }
-//    @Test
-    public void termsOfUseTextPart1() throws IOException, InterruptedException {
+    //    @Test
+    public void termsOfUseTextPart7() throws IOException, InterruptedException {
         action.openPage("https://dex-trade.com/info/terms-of-use");
         action.waitElementIsVisible("//a[@data-test-id='header login']");
         pixelPerfect.byElement("//div[@class=\"light-page__styles legal-page__styles\"]",
@@ -121,7 +106,29 @@ public class TermsOfUse extends BaseTest {
 
     }
 
-            //    @Test
+    //    @Test
+    public void termsOfUseTextPart8() throws IOException, InterruptedException {
+        action.openPage("https://dex-trade.com/info/terms-of-use");
+        action.waitElementIsVisible("//a[@data-test-id='header login']");
+        pixelPerfect.byElement("//div[@class=\"light-page__styles legal-page__styles\"]",
+                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/real_life_screenshot.png",
+                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/mock_screenshot.png",
+                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/difference.png");
+
+    }
+
+    //    @Test
+    public void termsOfUseTextPart9() throws IOException, InterruptedException {
+        action.openPage("https://dex-trade.com/info/terms-of-use");
+        action.waitElementIsVisible("//a[@data-test-id='header login']");
+        pixelPerfect.byElement("//div[@class=\"light-page__styles legal-page__styles\"]",
+                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/real_life_screenshot.png",
+                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/mock_screenshot.png",
+                "Screenshots/termsOfUseTextPart1/EnChrome/screenshots_termsOfUseHederTestPart1/difference.png");
+
+    }
+
+    //    @Test
     public void test3() throws IOException, InterruptedException {
         action.openPage("https://dex-trade.com/sign-up");
         action.waitElementIsVisible("//a[@data-test-id='header login']");
@@ -149,5 +156,53 @@ public class TermsOfUse extends BaseTest {
                 "Screenshots/Create_Account_page/EnChrome/restore_password/difference.png");
     }
 
-}
+    @Test
+    public void termsOfUseFooter() throws IOException, InterruptedException {
+        //Open a page for test
+        action.openPage("https://dex-trade.com/info/terms-of-use");
 
+        //Waiting when the page is completely loaded
+        action.waitElementIsVisible("//a[@data-test-id='header login']");
+
+        action.clickByXpath("//div[@class=\"footer__inner\"]");
+        //Run the Pixel perfect test for a selected element
+        pixelPerfect.byElement("//div[@class=\"dropdown-container language-container footer-lang-style\"]",
+                "Screenshots/termsOfUseFooter/EnChrome/termsOfUseFooter/real_life_screenshot.png",
+                "Screenshots/termsOfUseFooter/EnChrome/termsOfUseFooter/mock_screenshot.png",
+                "Screenshots/termsOfUseFooter/EnChrome/termsOfUseFooter/difference.png");
+    }
+
+    @Test
+    public void termsOfUseFooterDropDownPart1() throws IOException, InterruptedException {
+        //Open a page for test
+        action.openPage("https://dex-trade.com/info/terms-of-use");
+
+        //Waiting when the page is completely loaded
+        action.waitElementIsVisible("//a[@data-test-id='header login']");
+
+        action.clickByXpath("//div[@data-test-id=\"lang-footer\"]");
+        //Run the Pixel perfect test for a selected element
+        pixelPerfect.byElement("//div[@class=\"dropdown-container language-container footer-lang-style\"]",
+                "Screenshots/termsOfUse/EnChrome/termsOfUseFooterDropDownPart1/EnChrome/termsOfUseFooterDropDownPart1/real_life_screenshot.png",
+                "Screenshots/termsOfUse/EnChrome/termsOfUseFooterDropDownPart1/EnChrome/termsOfUseFooterDropDownPart1/mock_screenshot.png",
+                "Screenshots/termsOfUse/EnChrome/termsOfUseFooterDropDownPart1/EnChrome/termsOfUseFooterDropDownPart1/difference.png");
+    }
+
+    @Test
+    public void termsOfUseFooterDropDownPart2() throws IOException, InterruptedException {
+        //Open a page for test
+        action.openPage("https://dex-trade.com/info/terms-of-use");
+
+        //Waiting when the page is completely loaded
+        action.waitElementIsVisible("//a[@data-test-id='header login']");
+
+        action.clickByXpath("//div[@data-test-id=\"lang-footer\"]");
+        action.viewElementByXpath("//div[@data-test-id=\"hi\"]");
+        //Run the Pixel perfect test for a selected element
+        pixelPerfect.byElement("//div[@class=\"dropdown-container language-container footer-lang-style\"]",
+                "Screenshots/termsOfUseFooterDropDownPart2/EnChrome/termsOfUseFooterDropDownPart2/real_life_screenshot.png",
+                "Screenshots/termsOfUseFooterDropDownPart2/EnChrome/termsOfUseFooterDropDownPart2/mock_screenshot.png",
+                "Screenshots/termsOfUseFooterDropDownPart2/EnChrome/termsOfUseFooterDropDownPart2/difference.png");
+    }
+
+}
