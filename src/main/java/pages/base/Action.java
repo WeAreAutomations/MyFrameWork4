@@ -75,10 +75,10 @@ public class Action {
         action.moveToElement(findElementByXpath(id)).perform();
     }
 
-    public void scrollPage(Double Scroll_to_pointed_pixel) {
+    public void scrollPage(String Scroll_to_pointed_pixel) {
         // Проскролить страницу на определенное количество пикселей
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(Scroll_to_pointed_pixel)");
+        js.executeScript("window.scrollBy" + "(" + Scroll_to_pointed_pixel + ")");//"window.scrollBy(0,500)"
     }
 
 
