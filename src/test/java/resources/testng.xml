@@ -6,7 +6,9 @@
 
         <classes>
 <!--            <class name="tests.createAccountPageTests.Tests"/>-->
-            <class name="tests.marketsPageTests.Header_Tests"></class>
+            <class name="tests.marketsPageTests.HeaderTests"/>
+            <class name="tests.marketsPageTests.FooterTests"/>
+            <class name="tests.marketsPageTests.BodyTests"/>
         </classes>
 
         </test>
