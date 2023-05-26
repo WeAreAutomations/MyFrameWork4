@@ -23,5 +23,17 @@ public class Tests extends BaseTest {
 
     }
 
+    @Test
+    public void loginPagePart1() throws IOException, InterruptedException {
+
+        action.openPage("https://dex-trade.com/login");
+        action.waitElementIsVisible("//a[@data-test-id='header signup']");
+        pixelPerfect.byElement("//div[@class=\"ds-container-fluid login-page-container\"]", "Screenshots/loginPagePart1/EnChrome/screenshots_loginPagePart1/real_life_screenshot.png",
+                "Screenshots/loginPagePart1/EnChrome/screenshots_loginPagePart1/mock_screenshot.png",
+                "Screenshots/loginPagePart1/EnChrome/screenshots_loginPagePart1/difference.png");
+
+
+    }
+
 }
 
