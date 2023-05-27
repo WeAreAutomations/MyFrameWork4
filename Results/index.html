@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,12 +21,11 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-WPT" class="navigator-link">
-              <span class="suite-name border-passed">WPT</span>
+              <span class="suite-name border-failed">WPT</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">14 methods, 4 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-WPT" class="hide-methods failed suite-WPT"> (hide)</a> <!-- hide-methods failed suite-WPT -->
+                      <a href="#" panel-name="suite-WPT" class="show-methods failed suite-WPT"> (show)</a> <!-- show-methods failed suite-WPT -->
+                    </span>
+                    <div class="method-list-content failed suite-WPT">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="langFooterMarketsPageDropDownPart2">langFooterMarketsPageDropDownPart2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="marketsInfoContainerMarketsPage">marketsInfoContainerMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="profileNavMarketsPage">profileNavMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="tradeNavMarketsPage">tradeNavMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-WPT -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +132,52 @@
                     <div class="method-list-content passed suite-WPT">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.HeaderTests" class="method navigator-link" hash-for-method="all_header">all_header</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="allFooterMarketsPage">allFooterMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="allHeaderMarketsPage">allHeaderMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="companyNavMarketsPage">companyNavMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="filterListMarketsPage">filterListMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="langFooterMarketsPageDropDownPart1">langFooterMarketsPageDropDownPart1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="marketNavMarketsPage">marketNavMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="marketsFilterMarketsPage">marketsFilterMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="marketsTitleMarketsPage">marketsTitleMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="productsNavMarketsPage">productsNavMarketsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WPT" title="tests.marketsPageTests.AllPageChromeTests" class="method navigator-link" hash-for-method="tableHeadMarketsPage">tableHeadMarketsPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-WPT -->
@@ -119,17 +192,155 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-WPT" class="panel WPT">
-          <div class="suite-WPT-class-passed">
+          <div class="suite-WPT-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.marketsPageTests.HeaderTests</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.marketsPageTests.AllPageChromeTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="all_header">
-                  </a> <!-- all_header -->
-                  <span class="method-name">all_header</span>
+                  <a name="langFooterMarketsPageDropDownPart2">
+                  </a> <!-- langFooterMarketsPageDropDownPart2 -->
+                  <span class="method-name">langFooterMarketsPageDropDownPart2</span>
+                  <div class="stack-trace">java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.AllPageChromeTests.langFooterMarketsPageDropDownPart2(AllPageChromeTests.java:253)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="marketsInfoContainerMarketsPage">
+                  </a> <!-- marketsInfoContainerMarketsPage -->
+                  <span class="method-name">marketsInfoContainerMarketsPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.AllPageChromeTests.marketsInfoContainerMarketsPage(AllPageChromeTests.java:136)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="profileNavMarketsPage">
+                  </a> <!-- profileNavMarketsPage -->
+                  <span class="method-name">profileNavMarketsPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.AllPageChromeTests.profileNavMarketsPage(AllPageChromeTests.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tradeNavMarketsPage">
+                  </a> <!-- tradeNavMarketsPage -->
+                  <span class="method-name">tradeNavMarketsPage</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (029c81a34b86386007ead6d6754aaf40)] -&gt; xpath: //a[@data-test-id=&apos;header login&apos;]] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4&apos;, java.version: &apos;11.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/bc/lw3rjsjs5c9...}, goog:chromeOptions: {debuggerAddress: localhost:61606}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61606/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 029c81a34b86386007ead6d6754aaf40
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.base.Action.waitElementIsVisible(Action.java:41)
+	at tests.marketsPageTests.AllPageChromeTests.tradeNavMarketsPage(AllPageChromeTests.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WPT-class-failed -->
+          <div class="suite-WPT-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.marketsPageTests.AllPageChromeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allFooterMarketsPage">
+                  </a> <!-- allFooterMarketsPage -->
+                  <span class="method-name">allFooterMarketsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="allHeaderMarketsPage">
+                  </a> <!-- allHeaderMarketsPage -->
+                  <span class="method-name">allHeaderMarketsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="companyNavMarketsPage">
+                  </a> <!-- companyNavMarketsPage -->
+                  <span class="method-name">companyNavMarketsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterListMarketsPage">
+                  </a> <!-- filterListMarketsPage -->
+                  <span class="method-name">filterListMarketsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="langFooterMarketsPageDropDownPart1">
+                  </a> <!-- langFooterMarketsPageDropDownPart1 -->
+                  <span class="method-name">langFooterMarketsPageDropDownPart1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="marketNavMarketsPage">
+                  </a> <!-- marketNavMarketsPage -->
+                  <span class="method-name">marketNavMarketsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="marketsFilterMarketsPage">
+                  </a> <!-- marketsFilterMarketsPage -->
+                  <span class="method-name">marketsFilterMarketsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="marketsTitleMarketsPage">
+                  </a> <!-- marketsTitleMarketsPage -->
+                  <span class="method-name">marketsTitleMarketsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productsNavMarketsPage">
+                  </a> <!-- productsNavMarketsPage -->
+                  <span class="method-name">productsNavMarketsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tableHeadMarketsPage">
+                  </a> <!-- tableHeadMarketsPage -->
+                  <span class="method-name">tableHeadMarketsPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,7 +357,7 @@
 &lt;suite name=&quot;WPT&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Dex-Trade - Pixel perfect regression&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.marketsPageTests.HeaderTests&quot;/&gt;
+      &lt;class name=&quot;tests.marketsPageTests.AllPageChromeTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Dex-Trade - Pixel perfect regression --&gt;
 &lt;/suite&gt; &lt;!-- WPT --&gt;
@@ -186,16 +397,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'all_header')
-data.setCell(0, 2, 'tests.marketsPageTests.HeaderTests')
-data.setCell(0, 3, 10784);
+data.setCell(0, 1, 'profileNavMarketsPage')
+data.setCell(0, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(0, 3, 25419);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tableHeadMarketsPage')
+data.setCell(1, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(1, 3, 20952);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'marketsTitleMarketsPage')
+data.setCell(2, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(2, 3, 20593);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'langFooterMarketsPageDropDownPart1')
+data.setCell(3, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(3, 3, 20540);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'marketsInfoContainerMarketsPage')
+data.setCell(4, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(4, 3, 20440);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'companyNavMarketsPage')
+data.setCell(5, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(5, 3, 20160);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'marketsFilterMarketsPage')
+data.setCell(6, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(6, 3, 20061);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'filterListMarketsPage')
+data.setCell(7, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(7, 3, 20005);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'marketNavMarketsPage')
+data.setCell(8, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(8, 3, 19984);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'langFooterMarketsPageDropDownPart2')
+data.setCell(9, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(9, 3, 19868);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'productsNavMarketsPage')
+data.setCell(10, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(10, 3, 19567);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'allHeaderMarketsPage')
+data.setCell(11, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(11, 3, 18698);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'tradeNavMarketsPage')
+data.setCell(12, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(12, 3, 13164);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'allFooterMarketsPage')
+data.setCell(13, 2, 'tests.marketsPageTests.AllPageChromeTests')
+data.setCell(13, 3, 11213);
 window.suiteTableData['WPT']= { tableData: data, tableDiv: 'times-div-WPT'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-WPT">
               </div> <!-- times-div-WPT -->
             </div> <!-- times-div -->
@@ -221,18 +484,78 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.marketsPageTests.HeaderTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.marketsPageTests.AllPageChromeTests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">all_header</span>
+                <span class="method-name">allFooterMarketsPage</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">allHeaderMarketsPage</span>
+                <span class="method-start">11219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">companyNavMarketsPage</span>
+                <span class="method-start">29920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">filterListMarketsPage</span>
+                <span class="method-start">50084 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">langFooterMarketsPageDropDownPart1</span>
+                <span class="method-start">70090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">langFooterMarketsPageDropDownPart2</span>
+                <span class="method-start">90633 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">marketNavMarketsPage</span>
+                <span class="method-start">110504 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">marketsFilterMarketsPage</span>
+                <span class="method-start">130489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">marketsInfoContainerMarketsPage</span>
+                <span class="method-start">150553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">marketsTitleMarketsPage</span>
+                <span class="method-start">170994 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productsNavMarketsPage</span>
+                <span class="method-start">191590 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">profileNavMarketsPage</span>
+                <span class="method-start">211158 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tableHeadMarketsPage</span>
+                <span class="method-start">236578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tradeNavMarketsPage</span>
+                <span class="method-start">257533 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">clearCookiesAndLocalStorage</span>
-                <span class="method-start">10791 ms</span>
+                <span class="method-start">270703 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">15876 ms</span>
+                <span class="method-start">275758 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

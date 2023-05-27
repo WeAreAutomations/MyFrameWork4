@@ -1,25 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="10" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-23T01:19:35 EEST" name="WPT" finished-at="2023-05-23T01:19:46 EEST" duration-ms="10873">
+  <suite started-at="2023-05-26T15:11:46 EEST" name="WPT" finished-at="2023-05-26T15:16:17 EEST" duration-ms="270753">
     <groups>
     </groups>
-    <test started-at="2023-05-23T01:19:35 EEST" name="Dex-Trade - Pixel perfect regression" finished-at="2023-05-23T01:19:46 EEST" duration-ms="10873">
-      <class name="tests.marketsPageTests.HeaderTests">
-        <test-method signature="all_header()[pri:0, instance:tests.marketsPageTests.HeaderTests@6daf7d37]" started-at="2023-05-23T01:19:36 EEST" name="all_header" finished-at="2023-05-23T01:19:46 EEST" duration-ms="10784" status="PASS">
+    <test started-at="2023-05-26T15:11:46 EEST" name="Dex-Trade - Pixel perfect regression" finished-at="2023-05-26T15:16:17 EEST" duration-ms="270753">
+      <class name="tests.marketsPageTests.AllPageChromeTests">
+        <test-method signature="allFooterMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:11:46 EEST" name="allFooterMarketsPage" finished-at="2023-05-26T15:11:57 EEST" duration-ms="11213" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- all_header -->
-        <test-method is-config="true" signature="clearCookiesAndLocalStorage()[pri:0, instance:tests.marketsPageTests.HeaderTests@6daf7d37]" started-at="2023-05-23T01:19:46 EEST" name="clearCookiesAndLocalStorage" finished-at="2023-05-23T01:19:46 EEST" duration-ms="67" status="PASS">
+        </test-method> <!-- allFooterMarketsPage -->
+        <test-method signature="allHeaderMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:11:57 EEST" name="allHeaderMarketsPage" finished-at="2023-05-26T15:12:16 EEST" duration-ms="18698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allHeaderMarketsPage -->
+        <test-method signature="companyNavMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:12:16 EEST" name="companyNavMarketsPage" finished-at="2023-05-26T15:12:36 EEST" duration-ms="20160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- companyNavMarketsPage -->
+        <test-method signature="filterListMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:12:36 EEST" name="filterListMarketsPage" finished-at="2023-05-26T15:12:56 EEST" duration-ms="20005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterListMarketsPage -->
+        <test-method signature="langFooterMarketsPageDropDownPart1()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:12:56 EEST" name="langFooterMarketsPageDropDownPart1" finished-at="2023-05-26T15:13:17 EEST" duration-ms="20540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- langFooterMarketsPageDropDownPart1 -->
+        <test-method signature="langFooterMarketsPageDropDownPart2()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:13:17 EEST" name="langFooterMarketsPageDropDownPart2" finished-at="2023-05-26T15:13:37 EEST" duration-ms="19868" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[*** Images are not similar *** expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+at tests.marketsPageTests.AllPageChromeTests.langFooterMarketsPageDropDownPart2(AllPageChromeTests.java:253)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- langFooterMarketsPageDropDownPart2 -->
+        <test-method signature="marketNavMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:13:37 EEST" name="marketNavMarketsPage" finished-at="2023-05-26T15:13:57 EEST" duration-ms="19984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marketNavMarketsPage -->
+        <test-method signature="marketsFilterMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:13:57 EEST" name="marketsFilterMarketsPage" finished-at="2023-05-26T15:14:17 EEST" duration-ms="20061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marketsFilterMarketsPage -->
+        <test-method signature="marketsInfoContainerMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:14:17 EEST" name="marketsInfoContainerMarketsPage" finished-at="2023-05-26T15:14:37 EEST" duration-ms="20440" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[*** Images are not similar *** expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+at tests.marketsPageTests.AllPageChromeTests.marketsInfoContainerMarketsPage(AllPageChromeTests.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marketsInfoContainerMarketsPage -->
+        <test-method signature="marketsTitleMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:14:37 EEST" name="marketsTitleMarketsPage" finished-at="2023-05-26T15:14:58 EEST" duration-ms="20593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marketsTitleMarketsPage -->
+        <test-method signature="productsNavMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:14:58 EEST" name="productsNavMarketsPage" finished-at="2023-05-26T15:15:17 EEST" duration-ms="19567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsNavMarketsPage -->
+        <test-method signature="profileNavMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:15:17 EEST" name="profileNavMarketsPage" finished-at="2023-05-26T15:15:43 EEST" duration-ms="25419" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[*** Images are not similar *** expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+at tests.marketsPageTests.AllPageChromeTests.profileNavMarketsPage(AllPageChromeTests.java:107)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileNavMarketsPage -->
+        <test-method signature="tableHeadMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:15:43 EEST" name="tableHeadMarketsPage" finished-at="2023-05-26T15:16:04 EEST" duration-ms="20952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tableHeadMarketsPage -->
+        <test-method signature="tradeNavMarketsPage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:16:04 EEST" name="tradeNavMarketsPage" finished-at="2023-05-26T15:16:17 EEST" duration-ms="13164" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (029c81a34b86386007ead6d6754aaf40)] -> xpath: //a[@data-test-id='header login']] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/bc/lw3rjsjs5c9...}, goog:chromeOptions: {debuggerAddress: localhost:61606}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61606/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 029c81a34b86386007ead6d6754aaf40]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (029c81a34b86386007ead6d6754aaf40)] -> xpath: //a[@data-test-id='header login']] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/bc/lw3rjsjs5c9...}, goog:chromeOptions: {debuggerAddress: localhost:61606}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61606/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 029c81a34b86386007ead6d6754aaf40
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at pages.base.Action.waitElementIsVisible(Action.java:41)
+at tests.marketsPageTests.AllPageChromeTests.tradeNavMarketsPage(AllPageChromeTests.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tradeNavMarketsPage -->
+        <test-method is-config="true" signature="clearCookiesAndLocalStorage()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:16:17 EEST" name="clearCookiesAndLocalStorage" finished-at="2023-05-26T15:16:17 EEST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearCookiesAndLocalStorage -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tests.marketsPageTests.HeaderTests@6daf7d37]" started-at="2023-05-23T01:19:51 EEST" name="close" finished-at="2023-05-23T01:19:52 EEST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.marketsPageTests.AllPageChromeTests@10bd9df0]" started-at="2023-05-26T15:16:22 EEST" name="close" finished-at="2023-05-26T15:16:22 EEST" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- tests.marketsPageTests.HeaderTests -->
+      </class> <!-- tests.marketsPageTests.AllPageChromeTests -->
     </test> <!-- Dex-Trade - Pixel perfect regression -->
   </suite> <!-- WPT -->
 </testng-results>

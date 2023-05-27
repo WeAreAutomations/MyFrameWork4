@@ -6,9 +6,13 @@
 
         <classes>
 <!--            <class name="tests.createAccountPageTests.Tests"/>-->
-            <class name="tests.marketsPageTests.HeaderTests"/>
-            <class name="tests.marketsPageTests.FooterTests"/>
-            <class name="tests.marketsPageTests.BodyTests"/>
+<!--            <class name="tests.marketsPageTests.HeaderTests"/>-->
+<!--            <class name="tests.marketsPageTests.FooterTests"/>-->
+<!--            <class name="tests.marketsPageTests.BodyTests"/>-->
+<!--            <class name="tests.marketsPageTests.AllPageFirefoxTests"/>-->
+<!--            <class name="tests.marketsPageTests.AllPageChromeTests"/>-->
+            <class name="tests.demoTradingPageTest.AllPageFirefoxTests"/>
+            <class name="tests.demoTradingPageTest.AllPageChromeTests"/>
         </classes>
 
         </test>

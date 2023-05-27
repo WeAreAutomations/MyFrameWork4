@@ -1,6 +1,7 @@
 package pages.base;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -75,4 +76,27 @@ public class Action {
     }
 
 
+    public void scrollPage(String Scroll_to_pointed_pixel) {
+    // Проскролить страницу на определенное количество пикселей
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy" + "(" + Scroll_to_pointed_pixel + ")");//"window.scrollBy(0,500)"
+    }
+
+    // Переместить фокус на элемент
+    public void viewElementByXpath(String xpath){
+        WebElement element = findElementByXpath(xpath);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", element);
+    }
+
+    public void ifButtonIsPresentClick(String xpath) throws InterruptedException {
+        //Thread.sleep(2000);
+        try {
+            WebElement cookiesBtn = findElementByXpath(xpath);
+            cookiesBtn.click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

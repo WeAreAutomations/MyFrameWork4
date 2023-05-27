@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Dex-Trade - Pixel perfect regression</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 23 01:19:35 EEST 2023</td>
+<td>Started on:</td><td>Fri May 26 15:11:46 EEST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10873 ms)</td>
+<tr><td>Total time:</td><td>270 seconds (270753 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,18 +67,264 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.marketsPageTests.HeaderTests.all_header()'><b>all_header</b><br>Test class: tests.marketsPageTests.HeaderTests</td>
+<td title='tests.marketsPageTests.AllPageChromeTests.marketsInfoContainerMarketsPage()'><b>marketsInfoContainerMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td><div><pre>java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.AllPageChromeTests.marketsInfoContainerMarketsPage(AllPageChromeTests.java:136)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2147002844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2147002844'><pre>java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.AllPageChromeTests.marketsInfoContainerMarketsPage(AllPageChromeTests.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>20</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.profileNavMarketsPage()'><b>profileNavMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td><div><pre>java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.AllPageChromeTests.profileNavMarketsPage(AllPageChromeTests.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1674938191", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1674938191'><pre>java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.AllPageChromeTests.profileNavMarketsPage(AllPageChromeTests.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>25</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.langFooterMarketsPageDropDownPart2()'><b>langFooterMarketsPageDropDownPart2</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td><div><pre>java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.AllPageChromeTests.langFooterMarketsPageDropDownPart2(AllPageChromeTests.java:253)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace402264886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace402264886'><pre>java.lang.AssertionError: *** Images are not similar *** expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at pages.pixel_perfect.PixelPerfect.byElement(PixelPerfect.java:107)
+	at tests.marketsPageTests.AllPageChromeTests.langFooterMarketsPageDropDownPart2(AllPageChromeTests.java:253)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>19</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.tradeNavMarketsPage()'><b>tradeNavMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (029c81a34b86386007ead6d6754aaf40)] -&gt; xpath: //a[@data-test-id=&apos;header login&apos;]] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4&apos;, java.version: &apos;11.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/bc/lw3rjsjs5c9...}, goog:chromeOptions: {debuggerAddress: localhost:61606}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61606/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 029c81a34b86386007ead6d6754aaf40
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.base.Action.waitElementIsVisible(Action.java:41)
+	at tests.marketsPageTests.AllPageChromeTests.tradeNavMarketsPage(AllPageChromeTests.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1657920572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1657920572'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on mac (029c81a34b86386007ead6d6754aaf40)] -&gt; xpath: //a[@data-test-id=&apos;header login&apos;]] (tried for 6 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.4&apos;, java.version: &apos;11.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/bc/lw3rjsjs5c9...}, goog:chromeOptions: {debuggerAddress: localhost:61606}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61606/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 029c81a34b86386007ead6d6754aaf40
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.base.Action.waitElementIsVisible(Action.java:41)
+	at tests.marketsPageTests.AllPageChromeTests.tradeNavMarketsPage(AllPageChromeTests.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>13</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.allFooterMarketsPage()'><b>allFooterMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
 <td></td>
-<td>10</td>
-<td>tests.marketsPageTests.HeaderTests@6daf7d37</td></tr>
+<td>11</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.filterListMarketsPage()'><b>filterListMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td></td>
+<td>20</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.marketsFilterMarketsPage()'><b>marketsFilterMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td></td>
+<td>20</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.companyNavMarketsPage()'><b>companyNavMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td></td>
+<td>20</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.marketNavMarketsPage()'><b>marketNavMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td></td>
+<td>19</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.langFooterMarketsPageDropDownPart1()'><b>langFooterMarketsPageDropDownPart1</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td></td>
+<td>20</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.marketsTitleMarketsPage()'><b>marketsTitleMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td></td>
+<td>20</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.productsNavMarketsPage()'><b>productsNavMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td></td>
+<td>19</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.allHeaderMarketsPage()'><b>allHeaderMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td></td>
+<td>18</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
+<tr>
+<td title='tests.marketsPageTests.AllPageChromeTests.tableHeadMarketsPage()'><b>tableHeadMarketsPage</b><br>Test class: tests.marketsPageTests.AllPageChromeTests</td>
+<td></td>
+<td>20</td>
+<td>tests.marketsPageTests.AllPageChromeTests@10bd9df0</td></tr>
 </table><p>
 </body>
 </html>
