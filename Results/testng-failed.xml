@@ -3,16 +3,22 @@
 <suite name="Failed suite [WPT]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Dex-Trade - Pixel perfect regression(failed)">
     <classes>
-      <class name="tests.marketsPageTests.AllPageChromeTests">
+      <class name="tests.demoTradingPageTest.AllPageFirefoxTests">
         <methods>
-          <include name="tradeNavMarketsPage"/>
+          <include name="tradeNavDemoPage"/>
+          <include name="demoTradeInfoDemoPage"/>
           <include name="close"/>
+          <include name="helpCrunchDemoPage"/>
+          <include name="getAppPhoneDemoPage"/>
+          <include name="helpCrunchKnowledgeBaseDemoPage"/>
           <include name="clearCookiesAndLocalStorage"/>
-          <include name="profileNavMarketsPage"/>
-          <include name="langFooterMarketsPageDropDownPart2"/>
-          <include name="marketsInfoContainerMarketsPage"/>
+          <include name="getAppDemoPage"/>
+          <include name="demoTradeMarketsTableDemoPage"/>
+          <include name="chatTextAreaDemoPage"/>
+          <include name="demoTradeMarketsDemoPage"/>
+          <include name="helpCrunchStartConversationDemoPage"/>
         </methods>
-      </class> <!-- tests.marketsPageTests.AllPageChromeTests -->
+      </class> <!-- tests.demoTradingPageTest.AllPageFirefoxTests -->
     </classes>
   </test> <!-- Dex-Trade - Pixel perfect regression(failed) -->
 </suite> <!-- Failed suite [WPT] -->
