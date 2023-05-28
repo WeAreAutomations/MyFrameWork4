@@ -416,7 +416,11 @@ public class AllPageFirefoxTests extends BaseTest {
         //Click button "Accept" use of cookies
 //        action.ifButtonIsPresentClick("//button[@class='close-button']");
         //This will scroll the page till the element is found
-        action.viewElementByXpath("//footer[@class='footer']");
+//        action.viewElementByXpath("//footer[@class='footer']");
+        //Find element by link xpath and store in variable "Element"
+        WebElement Element = driver.findElement(By.xpath("//footer[@class='footer']"));
+        //This will scroll the page till the element is found
+        js.executeScript("arguments[0].scrollIntoView();", Element);
         //Run the Pixel perfect test for a selected element
         pixelPerfect.byElement("//div[@class='footer__top']",
                 "Screenshots/Demo_page/EnFirefox/Screenshots_allFooterTopDemoPage/real_life_screenshot.png",
@@ -434,7 +438,11 @@ public class AllPageFirefoxTests extends BaseTest {
         //Click button "Accept" use of cookies
 //        action.ifButtonIsPresentClick("//button[@class='close-button']");
         //This will scroll the page till the element is found
-        action.viewElementByXpath("//footer[@class='footer']");
+//        action.viewElementByXpath("//footer[@class='footer']");
+        //Find element by link xpath and store in variable "Element"
+        WebElement Element = driver.findElement(By.xpath("//footer[@class='footer']"));
+        //This will scroll the page till the element is found
+        js.executeScript("arguments[0].scrollIntoView();", Element);
         //Run the Pixel perfect test for a selected element
         pixelPerfect.byElement("//div[@class='footer__bottom']",
                 "Screenshots/Demo_page/EnFirefox/Screenshots_allFooterBottomDemoPage/real_life_screenshot.png",
