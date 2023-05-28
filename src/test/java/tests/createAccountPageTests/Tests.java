@@ -45,15 +45,18 @@ public class Tests extends BaseTest {
 //        pixelPerfect.Assert(0.005);
     }
 
-//    @Test
-//    public void test3() throws IOException, InterruptedException {
-//        action.openPage("https://dex-trade.com/sign-up");
-//        action.waitElementIsVisible("//a[@data-test-id='header login']");
-//        action.hoverOverAnElementByXpath("(//span[@class=\"nav-title\"])[2]");
+    @Test
+    public void test3() throws IOException, InterruptedException {
+        action.openPage("https://dex-trade.com/info/terms-of-use");
+        action.waitElementIsVisible("//a[@data-test-id='header login']");
+        action.clickByXpath("//div[@data-test-id='lang-footer']");
+        action.viewElementByXpath("//div[@data-test-id=\"hi\"]");
+
+        Thread.sleep(60000);
 //        pixelPerfect.byElement("//div[@class='menu-container']", "Screenshots/Create_Account_page/EnChrome/Screenshots_test3/real_life_screenshot.png",
 //                "Screenshots/Create_Account_page/EnChrome/Screenshots_test3/mock_screenshot.png",
 //                "Screenshots/Create_Account_page/EnChrome/Screenshots_test3/difference.png");
-//    }
+    }
 
 //    @Test
 //    public void test4() throws IOException, InterruptedException {
