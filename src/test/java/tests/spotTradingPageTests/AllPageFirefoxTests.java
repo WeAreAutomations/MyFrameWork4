@@ -106,7 +106,7 @@ public class AllPageFirefoxTests extends BaseTest {
         //Hover
         action.hoverOverAnElementByXpath("(//li[@class='header-nav-item item-relative'])[1]");
         // Login click
-        action.clickByXpath("//a[@data-test-id='demo trading']");
+        action.clickByXpath("//a[@data-test-id='spot trading']");
         Thread.sleep(6000);
         //Hover
         action.hoverOverAnElementByXpath("//div[@data-test-id='profile']");
