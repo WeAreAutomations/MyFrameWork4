@@ -40,6 +40,9 @@ public class Action {
         new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT)).
                 until(ExpectedConditions.visibilityOf(findElementByXpath(xpath)));
     }
+    public void pauseInMilliSeconds(int milliSeconds) throws InterruptedException {
+        Thread.sleep(milliSeconds);
+    }
 
     public void inputText(WebElement element, String text) {
         element.sendKeys(text);
