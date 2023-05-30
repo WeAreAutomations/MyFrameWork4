@@ -12,7 +12,7 @@ public class Tests extends BaseTest {
 
 
     @Test
-    public void loginHederTest() throws IOException, InterruptedException {
+    public void loginHeaderTest() throws IOException, InterruptedException {
 
         action.openPage("https://dex-trade.com/login");
         action.waitElementIsVisible("//a[@data-test-id='header signup']");
